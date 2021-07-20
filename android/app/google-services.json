@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "755448460668",
+    "project_id": "spring-fcm-f7d4e",
+    "storage_bucket": "spring-fcm-f7d4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755448460668:android:7b6f440bb373dcd1fe60f9",
+        "android_client_info": {
+          "package_name": "com.awesomeproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755448460668-rilcu6gmbljbq4dmrqf5ime305fjd1ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgRz_nb1ZJ6egVs7OHmCL-q2Smv_JhQAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755448460668-rilcu6gmbljbq4dmrqf5ime305fjd1ls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755448460668:android:7c374cc394532346fe60f9",
+        "android_client_info": {
+          "package_name": "com.vnpay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755448460668-rilcu6gmbljbq4dmrqf5ime305fjd1ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgRz_nb1ZJ6egVs7OHmCL-q2Smv_JhQAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755448460668-rilcu6gmbljbq4dmrqf5ime305fjd1ls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
