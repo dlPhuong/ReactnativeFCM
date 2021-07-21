@@ -6,8 +6,7 @@
  * @flow strict-local
  */
 
- import 'react-native-gesture-handler';
- import * as React from 'react';
+import React,{useEffect} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -21,27 +20,27 @@ import {
   View,
 } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import notifee from '@notifee/react-native';
+import messaging from '@react-native-firebase/messaging';
 
-import Login from './Login';
-import MainPage from './Mainpage';
+const MainPage = ({ route,navigation }) => {
+  console.log(route.params);
+  const { account } = route.params;
 
+  async function onDisplayNotification() {
+    messaging()
+    .unsubscribeFromTopic(account)
+    .then(() => {
+      navigation.navigate('Login');
+      console.log('Unsubscribed fom the topic!'+account)
+    });
+  }
 
-const App = () => {
-  const Stack = createStackNavigator();
 ////////////////////
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          options={{ title: 'Login' }}
-        />
-        <Stack.Screen name="MainPage" component={MainPage} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaView style={styles.sectionContainer}>
+       <Button title="đăng xuất nè" onPress={() => onDisplayNotification()} />
+    </SafeAreaView>
   );
 };
 
@@ -72,4 +71,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default App;
+export default MainPage;
